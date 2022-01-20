@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+
+.articleNavContainer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 0 0 0;
+}
+.articleNavPhotos{
+    flex-grow: 1;
+    border-bottom: 1px solid white;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 7px 7px 7px;
+    grid-template-rows:  7px 7px 7px;
+    padding: 0 0 10px 0;
+}
+.articleNavMiniBox{
+    border: 1px solid white;
+}
+.articleNavVideos{
+    border-bottom:none;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    padding: 0 0 10px 0;
+    flex-grow: 1;
+    font-size: 17.8px;
+}
+
+
+#articleBoxContainerLink{
+    text-decoration: none;
+}
+.articleBoxContainer{
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    margin-top: 2px; 
+    grid-template-columns: auto auto auto;
+    padding: .33vw;
+}
+.articleBox{
+    height: 33vw;
+    width: 33vw;
+    text-align: center;
+    overflow: hidden;   
+    padding: .5%;
+}
+.articleBox img{
+    height: 99.5%;
+    width: 99.5%; 
+    overflow: hidden;
+}
+.articleBoxNav{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    display: none;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    height: 50px;
+    z-index: 2;
+}
+.articleBoxNavNo{
+    flex-grow: 1;
+    margin-left: 5px;
+}
+.articleBoxNavText{
+    flex-grow: 8;
+    margin-left: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.articleBoxNav input{
+    flex-grow: 5;
+    margin-left: 5px;
+    border: 1px solid gray;
+    border-radius: 5%;
+    width: 10vh;
+    padding: 5px;
+    outline: none;
+}
+
+
+
+
+.articleBoxUpper{ 
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 40px;
+    display: none;
+    padding: 8px;
+}
+.articleBoxUpperLeftPhoto, .articleBoxBottomAddCommentPhoto{
+    width: 25px;
+    height: 25px;
+    background: black url('9.jpeg') no-repeat center center / cover;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.articleBoxUpperLeftText{
+    flex-grow: 5;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+    white-space: nowrap;
+    margin-right: 10px;
+    text-overflow: ellipsis;
+    width: 70vw;
+    font-size: 1.2rem;
+}
+.articleBoxUpperRightDots{
+    flex-grow: 1;
+}
+
+
+
+.articleBoxLower{
+    display: none;
+    padding: 8px;
+}
+.articleBoxLowerLike{
+    float: left;
+    margin: 0 10px 0 0;
+    font-size: 20px;
+}
+.articleBoxLowerComment{
+    float: left;
+    margin: 4px 10px 0 0;
+}
+
+
+
+.articleBoxBottom{
+    display: grid;
+    justify-content: left;
+    align-items: center;   
+    display: none;
+    padding: 0 2vw;
+}
+.articleBoxBottomLikes{
+    font-family: 'Rubik', sans-serif;
+    font-size: .9rem;
+}
+.articleBoxBottomQuot{
+    display: inline-block;
+    padding: 8px 0;
+    max-height: 50px;
+    max-width: 96vw;
+}
+.articleBoxBottomQuotName{
+    font-family: 'Rubik', sans-serif;
+    float: left;
+    padding-right: 6px;
+}
+.articleBoxBottomQuotText{
+    line-height: 20px;
+    overflow: hidden;
+}
+.articleBoxBottomQuotMore{
+    color: gray;
+    font-size: .9rem;
+}
+.articleBoxBottomComments{
+    color: gray;
+    padding: 8px 0;
+}
+.articleBoxBottomAddComment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.articleBoxBottomAddComment input{
+    border: none;
+    flex-grow: 4;
+    width: 70vw;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+}
+.articleBoxBottomAddCommentPost{
+    color: rgb(21, 21, 80);
+    font-family: 'Rubik', sans-serif;
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    text-align: center;
+    width: 10vw;
+    flex-grow: 1;
+}
+.articleBoxBottomTime{
+    color: gray;
+    font-size: .7rem;
+    padding: 5px 0 10px 0;
+}
+
+
+.articleBoxContainerLink{
+    width: 0;
+    height: 0;
+    display: none;
+}

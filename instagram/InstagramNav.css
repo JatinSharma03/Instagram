@@ -1,0 +1,382 @@
+.hidden{
+    width: 100vw;
+    height: 100vh;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+
+.navbarContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 40px;
+    margin: 5px 0 5px 0;
+}
+.navName{
+    margin: 0 3vh 0 3vw;
+    flex-grow: 3;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: 'Rubik', sans-serif;
+    text-overflow: ellipsis;
+}
+.navbarContainerRight{
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: auto auto;
+    float: right;
+    justify-content: right;
+    align-items: center;
+}
+.navAddContainer{
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 7px;
+    padding: 3px;
+    height: 27px;
+    width: 27px;
+    margin: 5.25px 3vw 5.25px 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navAdd span{
+    font-size: 20px;
+    font-weight: bolder;
+}
+.navTripleBarContainer{
+    cursor: pointer;
+    padding: 5px;
+    margin: 0 3vw 0 3vw;
+}
+.navTripleBarBar{
+    width: 25px;
+    height: 2.5px;
+    background-color: white;
+    margin: 5px;
+}
+
+
+
+.picbarContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2vw;
+}
+.picbarImageContainer{
+    padding: 2px;
+    border: 1.5px solid gray;
+    display: inline-block;
+    border-radius: 100%;
+}
+.picbarImage{
+    width: 22vw;
+    height: 22vw;
+    border-radius: 100%;
+    background: black url('9.jpeg') no-repeat center center / cover;
+}
+.picbarContainerRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 3;
+    font-size: 20px;
+}
+.picbarData{
+    flex-grow: 1;
+    text-align: center;
+    width: 21vw;
+    margin: 0 1vw 0 0;
+}
+.picbarDataText{
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Rubik', sans-serif;
+    text-overflow: ellipsis;
+    font-size: .8em;
+}
+.picbarDataTextDigit{
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: 'Rubik', sans-serif;
+    text-overflow: ellipsis;
+    font-size: .8em;
+}
+
+
+.introbarContainer{
+    padding: 8px;
+}
+.introbarName{
+    overflow: hidden;
+    text-overflow: clip;
+    font-family: 'Rubik', sans-serif;
+}
+.introbarWebsite{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: rgb(100, 100, 240);
+    margin: 4px 0 0 0;
+}
+.introbarWebsite a{
+    text-decoration: none;
+    color: rgb(111, 111, 236);
+}
+.introbarBio{
+    margin: 4px 0 0 0;
+    font-size: 13px;
+}
+.introbarBio pre{
+    overflow: hidden;
+}
+.introbarBio button{
+    border: none;
+    text-decoration: none;
+    color: gray;
+    display: none;
+}
+
+
+
+
+.containerAdd{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(36, 32, 32);
+    position: absolute;
+    top: 50vh;
+    border-radius: 15px;
+    display: none;
+    z-index: 1;
+}
+.containerAddNav{
+    text-align: center;
+    background-color:  rgb(36, 32, 32);
+    padding: 10px 0;
+    display: grid;
+    border-radius: 15px 15px 0 0;
+    justify-content: center;
+    border-bottom: 1px solid gray;
+    padding: 10px 0 0 10px;
+}
+.containerAddNavBar{
+    width: 10vw;
+    height: 1vw;
+    border-radius: 20%;
+    background-color: rgb(109, 105, 105);
+    margin: auto;
+}
+.containerAddNavText{
+    background-color:  rgb(36, 32, 32);
+    font-family: 'Rubik', sans-serif;
+    margin: 15px 0 10px 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.containerAddBody{
+    display: grid;
+    grid-gap: 7vw;
+    justify-content: left;
+    background-color:  rgb(36, 32, 32);
+    padding: 3vw;
+}
+.containerAddBodyItem{
+    font-family: 'Rubik', sans-serif;
+    background-color:  rgb(36, 32, 32);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+
+
+.containerTripleBar{
+    width: 260px;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid  rgb(36, 32, 32);
+    display: grid;
+    grid-template-rows: 60px 50px 50px 50px;
+    grid-template-columns: 100%;
+    grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    justify-content: left;
+    align-items:center;
+    display: none;
+    z-index: 1;
+}
+.containerTripleBarNavBar{
+    border-bottom:  1px solid  rgb(36, 32, 32);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+    justify-content: center;
+}
+.containerTripleBarBox{
+    height: 100%;
+    font-family: 'Rubik', sans-serif;
+    display: grid;
+    align-items: center;
+    justify-content: left;
+    padding: 8px;
+}
+.containerTripleBarRow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+.containerTripleBarPic1{
+    border-radius: 100%;
+    flex-grow: 1;
+    width: 45px;
+    height: 45px;
+    background: black url('image.jfif') no-repeat center center / cover;
+}
+.containerTripleBarPic2{
+    border-radius: 100%;
+    flex-grow: 1;
+    width: 45px;
+    height: 45px;
+    background: black url('image.jfif') no-repeat center center / cover;
+}
+.containerTripleBarPic3{
+    border-radius: 100%;
+    flex-grow: 1;
+    width: 45px;
+    height: 45px;
+    background: black url('image.jfif') no-repeat center center / cover;
+}
+.containerTripleBarText{
+    flex-grow: 4;
+    width: 160px;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 0 0 8px;
+    text-overflow: ellipsis;
+}
+.containerTripleBarSelect{
+    margin: 0 0 0 8px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border:  1px solid  rgb(36, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+}
+.containerTripleBarSelectDot{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background-color: black;
+    color: black;
+}
+
+@media only screen and (max-width:270px) {
+    .containerTripleBar{
+        width: 90vw;
+    }
+    .containerTripleBarBox{
+        padding: 2vw;
+    }
+    .containerTripleBarRow{
+        margin-bottom: 8px;
+    }
+    .containerTripleBarPic1, .containerTripleBarPic2, .containerTripleBarPic3{
+        width: 15vw;
+        height: 15vw;
+    }
+    .containerTripleBarText{
+        width: 55vw;
+        margin: 0 0 0 2vw;
+    }
+    .containerTripleBarSelect{
+        margin: 0 0 0 2vw;
+        width: 9vw;
+        height: 9vw;
+        border-radius: 100%;
+    }
+    .containerTripleBarSelectDot{
+        width: 4vw;
+        height: 4vw;
+        border-radius: 100%;
+    }
+        
+}
+
+
+.inputFeedPost{
+    display: grid;
+    justify-content: left;
+    align-items: center;
+    grid-template-columns: auto;
+    display: none;
+}
+.inputFeedPostNav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px 10px;
+    width: 100vw;
+}
+.inputFeedPostNavNo{
+    flex-grow: 1;
+    text-align: center;
+}
+.inputFeedPostNavText{
+    flex-grow: 10;
+    padding-left: 20px;
+}
+.inputFeedPostNavYes{
+    flex-grow: 1;
+}
+.inputFileImg{
+    width: 100vw;
+    padding: 5px;
+    border: 1px solid gray;
+    padding: 10px;
+    margin: 0 0 10px 0;
+}
+.inputFeedPostCaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.inputFeedPostCaption div{
+    flex-grow: 1;
+    width: 30px;
+    height: 30px;
+    background: black url('9.jpeg') no-repeat center center / cover;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+.inputFeedPostCaption textarea{
+    flex-grow: 6;
+    width: 100%;
+    border: none;
+    outline: none;
+}
